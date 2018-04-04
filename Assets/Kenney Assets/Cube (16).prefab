@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153681479964368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.337358, y: -4.714162, z: 0.41502333}
+  m_LocalPosition: {x: -3.2684927, y: 1.0013062, z: 2.331655}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,3 +110,4 @@ MonoBehaviour:
   fire: {fileID: 54156526462124190, guid: b3ab0f46c6fff724d917f2a2fcf8f94d, type: 2}
   throwpower: 10
   radius: 10
+  ENEMY: {fileID: 1952274420721484, guid: cee092795e9e4de40a0aded2a75963f5, type: 2}

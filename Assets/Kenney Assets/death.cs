@@ -6,6 +6,7 @@ public class death : MonoBehaviour {
     public Rigidbody fire;
     public float throwpower;
     public float radius;
+    public GameObject ENEMY;
     // Use this for initialization
     void Start()
     {
@@ -25,7 +26,7 @@ public class death : MonoBehaviour {
             if (hit.tag == "Enemy")
             {
                 Rigidbody fire2 = Instantiate(fire, transform.position, transform.rotation) as Rigidbody;
-                fire2.velocity = transform.position * throwpower;
+                fire2.velocity = (hit.transform.position - transform.position ) * throwpower;
             }
 
 
