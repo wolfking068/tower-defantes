@@ -46,6 +46,7 @@ public class NewBehaviourScript : MonoBehaviour,IDamageable {
     {
 
         hea1th.ganemoney(10);
+        hea1th.money3();
         enemy2.currentanmontofenemys -= 1;
         Destroy(gameObject);
     }

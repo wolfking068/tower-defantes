@@ -25,6 +25,7 @@ public class ray : MonoBehaviour {
                 
                 Ray();
                 heath.losemoney(10);
+                heath.money3();
                
              }
           }
