@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class health : MonoBehaviour, IDamageable
+public class health : MonoBehaviour, IDamageable, money
 {
     public int Health;
-	// Use this for initialization
-	void Start () {
-        Health = 5;
+    public int money;
+    // Use this for initialization
+    void Start () {
+        Health = 100;
+        money = 50;
     }
 	
 	// Update is called once per frame
@@ -17,5 +19,13 @@ public class health : MonoBehaviour, IDamageable
    public void takeDamage(int damageTaken)
     {
         Health -= damageTaken;
+    }
+    public void losemoney(int speand)
+    {
+        money -= speand;
+    }
+    public void ganemoney(int add)
+    {
+        money += add;
     }
 }

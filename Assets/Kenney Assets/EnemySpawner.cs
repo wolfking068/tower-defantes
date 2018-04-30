@@ -12,9 +12,9 @@ public class EnemySpawner : MonoBehaviour {
     public int max;
     public int currentanmontofenemys;
     public List<GameObject> listOfEnemies;
-
-	// Use this for initialization
-	void Start ()
+    public health stuff;
+    // Use this for initialization
+    void Start ()
     {
         listOfEnemies = new List<GameObject>();
 	}
@@ -29,6 +29,7 @@ public class EnemySpawner : MonoBehaviour {
         listOfEnemies.Add(spawnedEnemey);
         spawnedEnemey.GetComponent<NewBehaviourScript>().enemy2 = this;
         currentanmontofenemys += 1;
+        spawnedEnemey.GetComponent<NewBehaviourScript>().hea1th = stuff;
     }
 
 	
