@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1045489438484252}
+  m_RootGameObject: {fileID: 1153681479964368}
   m_IsPrefabParent: 1
---- !u!1 &1045489438484252
+--- !u!1 &1153681479964368
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4551001633380462}
-  - component: {fileID: 65599346966724964}
-  - component: {fileID: 33577445231042430}
-  - component: {fileID: 23363819133364186}
-  - component: {fileID: 114321075859517656}
+  - component: {fileID: 4689434942802358}
+  - component: {fileID: 33942234851447416}
+  - component: {fileID: 65614712583445872}
+  - component: {fileID: 23902719215157432}
+  - component: {fileID: 114790693944769186}
   m_Layer: 0
-  m_Name: kill
-  m_TagString: PlayerHealth
+  m_Name: Cube (16)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4551001633380462
+--- !u!4 &4689434942802358
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045489438484252}
+  m_GameObject: {fileID: 1153681479964368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.23, y: 0.465, z: 4.45}
+  m_LocalPosition: {x: -3.2684927, y: 1.0013062, z: 2.331655}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23363819133364186
+--- !u!23 &23902719215157432
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045489438484252}
+  m_GameObject: {fileID: 1153681479964368}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 64289a521cb53ab4d931515a8660189a, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65,7 +65,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -77,35 +77,38 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33577445231042430
+--- !u!33 &33942234851447416
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045489438484252}
+  m_GameObject: {fileID: 1153681479964368}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65599346966724964
+--- !u!65 &65614712583445872
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045489438484252}
+  m_GameObject: {fileID: 1153681479964368}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114321075859517656
+--- !u!114 &114790693944769186
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045489438484252}
+  m_GameObject: {fileID: 1153681479964368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b0bceeb0cfe714bb8ecd38f780604e, type: 3}
+  m_Script: {fileID: 11500000, guid: d1a261ac323c51748b631b78574e0036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
-  money: 0
+  fire: {fileID: 54156526462124190, guid: b3ab0f46c6fff724d917f2a2fcf8f94d, type: 2}
+  throwpower: 10
+  radius: 10
+  ENEMY: {fileID: 1952274420721484, guid: cee092795e9e4de40a0aded2a75963f5, type: 2}
+  timer: 0
