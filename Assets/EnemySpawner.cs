@@ -27,6 +27,10 @@ public class EnemySpawner : MonoBehaviour {
         GameObject spawnedEnemey = Instantiate(Enemey);
         spawnedEnemey.transform.position = transform.position;
         listOfEnemies.Add(spawnedEnemey);
+        
+        // @harley: If you need to access a component on a newly spawned GameObject
+        //          more than once, then you should cache it in a variable to avoid
+        //          calling GetComponent on it more than once for the same component.
         spawnedEnemey.GetComponent<NewBehaviourScript>().enemy2 = this;
         currentanmontofenemys += 1;
         spawnedEnemey.GetComponent<NewBehaviourScript>().hea1th = stuff;

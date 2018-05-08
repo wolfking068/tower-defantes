@@ -11,6 +11,9 @@ public class pose : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        // @harley: Prefer to use Input bindings via the InputManager rather
+        //          than using KeyCodes.
         if (Input.GetKeyDown(KeyCode.End))
         {
             phose.SetActive(true);

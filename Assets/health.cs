@@ -14,6 +14,10 @@ public class health : MonoBehaviour, IDamageable, money
         money3();
     }
 	
+    // @harley: Avoid having empty functions that get called by Unity's messages.
+    //          Having lots of empty Start() or Update() functions called can
+    //          impact performance.
+
 	// Update is called once per frame
 	void Update () {
 		

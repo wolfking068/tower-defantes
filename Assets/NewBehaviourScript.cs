@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
+// @harley: Give this a name! What is this new script? :o
 public class NewBehaviourScript : MonoBehaviour,IDamageable {
     public GameObject kill;
     NavMeshAgent agent;
