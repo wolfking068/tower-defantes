@@ -11,6 +11,11 @@ public class death : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        // @harley: Avoid hard-coding values for things like your timer in Start(),
+        //          especially if they're public and visible to the inspector.
+        
+        //          It can be especially confusing if you set a value in the
+        //          inspector that ultimately gets overridden in script.
         timer = 5;
     }
 
